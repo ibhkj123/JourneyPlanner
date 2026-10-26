@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEA3F62F308AA8B70025DA24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F62E308AA8B70025DA24 /* ContentView.swift */; };
+		DEA3F63A308AAB970025DA24 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F639308AAB970025DA24 /* Journey.swift */; };
+		DEA3F63C308AABC30025DA24 /* JourneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F63B308AABC30025DA24 /* JourneyRepository.swift */; };
+		DEA3F64C308AAE7A0025DA24 /* JourneyFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F64B308AAE7A0025DA24 /* JourneyFormViewModel.swift */; };
+		DEA3F652308AB0CD0025DA24 /* CreateJourneyUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F651308AB0CD0025DA24 /* CreateJourneyUseCase.swift */; };
+		DEA3F654308AB1950025DA24 /* AddJourneyActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F653308AB1950025DA24 /* AddJourneyActivityUseCase.swift */; };
+		DEA3F656308AB1DD0025DA24 /* JourneyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F655308AB1DD0025DA24 /* JourneyListViewModel.swift */; };
+		DEA3F658308AB3740025DA24 /* JourneyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F657308AB3740025DA24 /* JourneyDetailView.swift */; };
+		DEA3F65A308AB3940025DA24 /* JourneyFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F659308AB3940025DA24 /* JourneyFormView.swift */; };
+		DEA3F65C308AB4020025DA24 /* JourneyActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F65B308AB4020025DA24 /* JourneyActivitiesView.swift */; };
+		DEA3F65E308AB4EC0025DA24 /* ActivityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3F65D308AB4EC0025DA24 /* ActivityFormView.swift */; };
+		DEA3F66E308AC8250025DA24 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA3F66D308AC8250025DA24 /* WidgetKit.framework */; };
+		DEA3F670308AC8250025DA24 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA3F66F308AC8250025DA24 /* SwiftUI.framework */; };
+		DEA3F681308AC8270025DA24 /* JourneyPlannerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DEA3F66B308AC8250025DA24 /* JourneyPlannerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEA3F645308AACE90025DA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA3F621308AA8B70025DA24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA3F628308AA8B70025DA24;
+			remoteInfo = JourneyPlanner;
+		};
+		DEA3F67F308AC8270025DA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA3F621308AA8B70025DA24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA3F66A308AC8250025DA24;
+			remoteInfo = JourneyPlannerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEA3F682308AC8270025DA24 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DEA3F681308AC8270025DA24 /* JourneyPlannerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DEA3F629308AA8B70025DA24 /* JourneyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JourneyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA3F62E308AA8B70025DA24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEA3F639308AAB970025DA24 /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		DEA3F63B308AABC30025DA24 /* JourneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepository.swift; sourceTree = "<group>"; };
+		DEA3F641308AACE90025DA24 /* JourneyPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JourneyPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA3F64B308AAE7A0025DA24 /* JourneyFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyFormViewModel.swift; sourceTree = "<group>"; };
+		DEA3F651308AB0CD0025DA24 /* CreateJourneyUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJourneyUseCase.swift; sourceTree = "<group>"; };
+		DEA3F653308AB1950025DA24 /* AddJourneyActivityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyActivityUseCase.swift; sourceTree = "<group>"; };
+		DEA3F655308AB1DD0025DA24 /* JourneyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyListViewModel.swift; sourceTree = "<group>"; };
+		DEA3F657308AB3740025DA24 /* JourneyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailView.swift; sourceTree = "<group>"; };
+		DEA3F659308AB3940025DA24 /* JourneyFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyFormView.swift; sourceTree = "<group>"; };
+		DEA3F65B308AB4020025DA24 /* JourneyActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyActivitiesView.swift; sourceTree = "<group>"; };
+		DEA3F65D308AB4EC0025DA24 /* ActivityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFormView.swift; sourceTree = "<group>"; };
+		DEA3F66B308AC8250025DA24 /* JourneyPlannerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JourneyPlannerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA3F66D308AC8250025DA24 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DEA3F66F308AC8250025DA24 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DEA3F688308ACA9F0025DA24 /* JourneyPlannerWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JourneyPlannerWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DEA3F685308AC8270025DA24 /* Exceptions for "JourneyPlannerWidget" folder in "JourneyPlannerWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DEA3F66A308AC8250025DA24 /* JourneyPlannerWidgetExtension */;
+		};
+		DEA3F68C308ACBAA0025DA24 /* Exceptions for "JourneyPlannerWidget" folder in "JourneyPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SharedJourney.swift,
+			);
+			target = DEA3F628308AA8B70025DA24 /* JourneyPlanner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DEA3F62B308AA8B70025DA24 /* JourneyPlanner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JourneyPlanner;
+			sourceTree = "<group>";
+		};
+		DEA3F642308AACE90025DA24 /* JourneyPlannerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JourneyPlannerTests;
+			sourceTree = "<group>";
+		};
+		DEA3F671308AC8250025DA24 /* JourneyPlannerWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DEA3F68C308ACBAA0025DA24 /* Exceptions for "JourneyPlannerWidget" folder in "JourneyPlanner" target */,
+				DEA3F685308AC8270025DA24 /* Exceptions for "JourneyPlannerWidget" folder in "JourneyPlannerWidgetExtension" target */,
+			);
+			path = JourneyPlannerWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEA3F626308AA8B70025DA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F63E308AACE90025DA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F668308AC8250025DA24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA3F670308AC8250025DA24 /* SwiftUI.framework in Frameworks */,
+				DEA3F66E308AC8250025DA24 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEA3F620308AA8B70025DA24 = {
+			isa = PBXGroup;
+			children = (
+				DEA3F688308ACA9F0025DA24 /* JourneyPlannerWidgetExtension.entitlements */,
+				DEA3F650308AAF110025DA24 /* Models */,
+				DEA3F64F308AAF090025DA24 /* Views */,
+				DEA3F64E308AAEFF0025DA24 /* UseCases */,
+				DEA3F64D308AAEEB0025DA24 /* Repositories */,
+				DEA3F64A308AAE3A0025DA24 /* ViewModels */,
+				DEA3F62B308AA8B70025DA24 /* JourneyPlanner */,
+				DEA3F642308AACE90025DA24 /* JourneyPlannerTests */,
+				DEA3F671308AC8250025DA24 /* JourneyPlannerWidget */,
+				DEA3F66C308AC8250025DA24 /* Frameworks */,
+				DEA3F62A308AA8B70025DA24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA3F62A308AA8B70025DA24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F629308AA8B70025DA24 /* JourneyPlanner.app */,
+				DEA3F641308AACE90025DA24 /* JourneyPlannerTests.xctest */,
+				DEA3F66B308AC8250025DA24 /* JourneyPlannerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA3F64A308AAE3A0025DA24 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F64B308AAE7A0025DA24 /* JourneyFormViewModel.swift */,
+				DEA3F655308AB1DD0025DA24 /* JourneyListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DEA3F64D308AAEEB0025DA24 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F63B308AABC30025DA24 /* JourneyRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DEA3F64E308AAEFF0025DA24 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F651308AB0CD0025DA24 /* CreateJourneyUseCase.swift */,
+				DEA3F653308AB1950025DA24 /* AddJourneyActivityUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DEA3F64F308AAF090025DA24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F62E308AA8B70025DA24 /* ContentView.swift */,
+				DEA3F657308AB3740025DA24 /* JourneyDetailView.swift */,
+				DEA3F659308AB3940025DA24 /* JourneyFormView.swift */,
+				DEA3F65B308AB4020025DA24 /* JourneyActivitiesView.swift */,
+				DEA3F65D308AB4EC0025DA24 /* ActivityFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEA3F650308AAF110025DA24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F639308AAB970025DA24 /* Journey.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEA3F66C308AC8250025DA24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3F66D308AC8250025DA24 /* WidgetKit.framework */,
+				DEA3F66F308AC8250025DA24 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEA3F628308AA8B70025DA24 /* JourneyPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA3F636308AA8B80025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlanner" */;
+			buildPhases = (
+				DEA3F625308AA8B70025DA24 /* Sources */,
+				DEA3F626308AA8B70025DA24 /* Frameworks */,
+				DEA3F627308AA8B70025DA24 /* Resources */,
+				DEA3F682308AC8270025DA24 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA3F680308AC8270025DA24 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DEA3F62B308AA8B70025DA24 /* JourneyPlanner */,
+			);
+			name = JourneyPlanner;
+			packageProductDependencies = (
+			);
+			productName = JourneyPlanner;
+			productReference = DEA3F629308AA8B70025DA24 /* JourneyPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEA3F640308AACE90025DA24 /* JourneyPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA3F647308AACE90025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlannerTests" */;
+			buildPhases = (
+				DEA3F63D308AACE90025DA24 /* Sources */,
+				DEA3F63E308AACE90025DA24 /* Frameworks */,
+				DEA3F63F308AACE90025DA24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA3F646308AACE90025DA24 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DEA3F642308AACE90025DA24 /* JourneyPlannerTests */,
+			);
+			name = JourneyPlannerTests;
+			packageProductDependencies = (
+			);
+			productName = JourneyPlannerTests;
+			productReference = DEA3F641308AACE90025DA24 /* JourneyPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEA3F66A308AC8250025DA24 /* JourneyPlannerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA3F686308AC8270025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlannerWidgetExtension" */;
+			buildPhases = (
+				DEA3F667308AC8250025DA24 /* Sources */,
+				DEA3F668308AC8250025DA24 /* Frameworks */,
+				DEA3F669308AC8250025DA24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DEA3F671308AC8250025DA24 /* JourneyPlannerWidget */,
+			);
+			name = JourneyPlannerWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = JourneyPlannerWidgetExtension;
+			productReference = DEA3F66B308AC8250025DA24 /* JourneyPlannerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEA3F621308AA8B70025DA24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					DEA3F628308AA8B70025DA24 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					DEA3F640308AACE90025DA24 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = DEA3F628308AA8B70025DA24;
+					};
+					DEA3F66A308AC8250025DA24 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = DEA3F624308AA8B70025DA24 /* Build configuration list for PBXProject "JourneyPlanner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEA3F620308AA8B70025DA24;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DEA3F62A308AA8B70025DA24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEA3F628308AA8B70025DA24 /* JourneyPlanner */,
+				DEA3F640308AACE90025DA24 /* JourneyPlannerTests */,
+				DEA3F66A308AC8250025DA24 /* JourneyPlannerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEA3F627308AA8B70025DA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F63F308AACE90025DA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F669308AC8250025DA24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEA3F625308AA8B70025DA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA3F658308AB3740025DA24 /* JourneyDetailView.swift in Sources */,
+				DEA3F64C308AAE7A0025DA24 /* JourneyFormViewModel.swift in Sources */,
+				DEA3F65E308AB4EC0025DA24 /* ActivityFormView.swift in Sources */,
+				DEA3F656308AB1DD0025DA24 /* JourneyListViewModel.swift in Sources */,
+				DEA3F63C308AABC30025DA24 /* JourneyRepository.swift in Sources */,
+				DEA3F63A308AAB970025DA24 /* Journey.swift in Sources */,
+				DEA3F62F308AA8B70025DA24 /* ContentView.swift in Sources */,
+				DEA3F65C308AB4020025DA24 /* JourneyActivitiesView.swift in Sources */,
+				DEA3F654308AB1950025DA24 /* AddJourneyActivityUseCase.swift in Sources */,
+				DEA3F65A308AB3940025DA24 /* JourneyFormView.swift in Sources */,
+				DEA3F652308AB0CD0025DA24 /* CreateJourneyUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F63D308AACE90025DA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA3F667308AC8250025DA24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEA3F646308AACE90025DA24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA3F628308AA8B70025DA24 /* JourneyPlanner */;
+			targetProxy = DEA3F645308AACE90025DA24 /* PBXContainerItemProxy */;
+		};
+		DEA3F680308AC8270025DA24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA3F66A308AC8250025DA24 /* JourneyPlannerWidgetExtension */;
+			targetProxy = DEA3F67F308AC8270025DA24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEA3F634308AA8B80025DA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEA3F635308AA8B80025DA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEA3F637308AA8B80025DA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JourneyPlanner/JourneyPlanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEA3F638308AA8B80025DA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JourneyPlanner/JourneyPlanner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEA3F648308AACE90025DA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JourneyPlanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JourneyPlanner";
+			};
+			name = Debug;
+		};
+		DEA3F649308AACE90025DA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JourneyPlanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JourneyPlanner";
+			};
+			name = Release;
+		};
+		DEA3F683308AC8270025DA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JourneyPlannerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JourneyPlannerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JourneyPlannerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlanner.JourneyPlannerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEA3F684308AC8270025DA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JourneyPlannerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MXLKA5L286;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JourneyPlannerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JourneyPlannerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.journeyplanner.JourneyPlanner.JourneyPlannerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEA3F624308AA8B70025DA24 /* Build configuration list for PBXProject "JourneyPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA3F634308AA8B80025DA24 /* Debug */,
+				DEA3F635308AA8B80025DA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA3F636308AA8B80025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA3F637308AA8B80025DA24 /* Debug */,
+				DEA3F638308AA8B80025DA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA3F647308AACE90025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA3F648308AACE90025DA24 /* Debug */,
+				DEA3F649308AACE90025DA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA3F686308AC8270025DA24 /* Build configuration list for PBXNativeTarget "JourneyPlannerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA3F683308AC8270025DA24 /* Debug */,
+				DEA3F684308AC8270025DA24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEA3F621308AA8B70025DA24 /* Project object */;
+}
